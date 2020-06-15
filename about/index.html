@@ -17,10 +17,19 @@
   <meta name="description" content="">
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
-  <title>Links - Hexo</title>
+  <title>page.title - Hexo</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+  
+
+  
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -159,59 +168,11 @@
               <div class="col-12 col-md-10 m-auto">
                 
 
-<div class="row links">
-  
-    
-    <div class="card col-lg-4 col-md-6 col-sm-12">
-      <a href="https://hexo.fluid-dev.com/docs/" class="card-body hover-with-bg" target="_blank" rel="noopener">
-        <div class="card-content">
-          
-            <div class="link-avatar my-auto">
-              <img src="/img/favicon.png" srcset="/img/loading.gif" alt="Fluid Docs" />
-            </div>
-          
-          <div class="link-text">
-            <div class="link-title">Fluid Docs</div>
-            <div class="link-intro">主题使用指南</div>
-          </div>
-        </div>
-      </a>
-    </div>
-  
-    
-    <div class="card col-lg-4 col-md-6 col-sm-12">
-      <a href="https://github.com/fluid-dev/hexo-theme-fluid" class="card-body hover-with-bg" target="_blank" rel="noopener">
-        <div class="card-content">
-          
-            <div class="link-avatar my-auto">
-              <img src="/img/favicon.png" srcset="/img/loading.gif" alt="Fluid Repo" />
-            </div>
-          
-          <div class="link-text">
-            <div class="link-title">Fluid Repo</div>
-            <div class="link-intro">主题 GitHub 仓库</div>
-          </div>
-        </div>
-      </a>
-    </div>
-  
-    
-    <div class="card col-lg-4 col-md-6 col-sm-12">
-      <a href="https://hexo.fluid-dev.com/docs/example/" class="card-body hover-with-bg" target="_blank" rel="noopener">
-        <div class="card-content">
-          
-            <div class="link-avatar my-auto">
-              <img src="/img/favicon.png" srcset="/img/loading.gif" alt="Fluid Example" />
-            </div>
-          
-          <div class="link-text">
-            <div class="link-title">Fluid Example</div>
-            <div class="link-intro">主题操作示例</div>
-          </div>
-        </div>
-      </a>
-    </div>
-  
+<div class="page-content">
+  <hr>
+<p>​—<br>title:leitongBlog<br>date:2020-06-15 16:18:43<br>layout:about<br>​—</p>
+<h2 id="这里可以写正文"><a href="#这里可以写正文" class="headerlink" title="这里可以写正文"></a>这里可以写正文</h2><h1 id="支持-Markdown-HTML"><a href="#支持-Markdown-HTML" class="headerlink" title="支持 Markdown, HTML"></a>支持 Markdown, HTML</h1><hr>
+
 </div>
 
               </div>
@@ -335,7 +296,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "Links&nbsp;",
+        "page.title&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
@@ -349,6 +310,21 @@
   </script>
 
 
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
 
 
 
