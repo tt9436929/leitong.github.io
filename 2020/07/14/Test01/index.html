@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="Lei Tong">
   <meta name="keywords" content="">
-  <title>Hello World - 梧桐树下</title>
+  <title>Test01 - 梧桐树下</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -152,8 +152,8 @@
               
   <div class="mt-3 post-meta">
     <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-    <time datetime="2020-06-15 14:12">
-      June 15, 2020 pm
+    <time datetime="2020-07-14 12:56">
+      July 14, 2020 pm
     </time>
   </div>
 
@@ -163,7 +163,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      96 字
+      1k 字
     </span>
   
 
@@ -173,7 +173,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1
+      12
        分钟
     </span>
   
@@ -204,25 +204,171 @@
           <div class="post-content mx-auto" id="post">
             
             <article class="markdown-body">
-              <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post-创建新的文章"><a href="#Create-a-new-post-创建新的文章" class="headerlink" title="Create a new post  创建新的文章"></a>Create a new post  创建新的文章</h3><pre><code class="hljs bash">$ hexo new <span class="hljs-string">"My New Post"</span></code></pre>
+              <h2 id="一、创建文章"><a href="#一、创建文章" class="headerlink" title="一、创建文章"></a>一、创建文章</h2><p>在站点文件夹中打开 git bash，输入如下命令创建文章，其中 <code>title</code> 为文章的标题</p>
+<pre><code class="hljs actionscript">$ hexo <span class="hljs-keyword">new</span> <span class="hljs-string">"title"</span></code></pre>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server-启动本地服务器"><a href="#Run-server-启动本地服务器" class="headerlink" title="Run server   启动本地服务器"></a>Run server   启动本地服务器</h3><pre><code class="hljs bash">$ hexo server</code></pre>
+<p>当输入命令后，就会在 <code>source/_post</code> 文件夹下创建一个文件，命名为：<code>title.md</code></p>
+<p>这个文件就是将要发布到网站上的原始文件，用于记录文章内容</p>
+<p><code>&lt;!--more--&gt;</code></p>
+<h2 id="二、编写文章（基于-Markdown）"><a href="#二、编写文章（基于-Markdown）" class="headerlink" title="二、编写文章（基于 Markdown）"></a>二、编写文章（基于 Markdown）</h2><h4 id="（1）标题"><a href="#（1）标题" class="headerlink" title="（1）标题"></a>（1）标题</h4><p><strong>1、Markdown 语法：</strong></p>
+<pre><code class="hljs clean"># 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题</code></pre>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="hljs bash">$ hexo generate  生成静态文件</code></pre>
+<p><strong>Typora 快捷键：</strong></p>
+<p>Ctrl+1：一级标题</p>
+<p>Ctrl+2：二级标题</p>
+<p>Ctrl+3：三级标题</p>
+<p>Ctrl+4：四级标题</p>
+<p>Ctrl+5：五级标题</p>
+<p>Ctrl+6 ：六级标题</p>
+<p>Ctrl+0：段落</p>
+<h4 id="（2）粗体、斜体、删除线和下划线"><a href="#（2）粗体、斜体、删除线和下划线" class="headerlink" title="（2）粗体、斜体、删除线和下划线"></a>（2）粗体、斜体、删除线和下划线</h4><p><strong>Markdown 语法：</strong></p>
+<pre><code class="hljs asciidoc"><span class="hljs-strong">*斜体*</span>
+*<span class="hljs-strong">*粗体*</span><span class="hljs-strong">*</span>
+<span class="hljs-strong">*</span>*<span class="hljs-strong">*加粗斜体*</span>*<span class="hljs-strong">*</span>
+<span class="hljs-strong">~~删除线~~</span></code></pre>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="hljs bash">$ hexo deploy   部署网站</code></pre>
+<p><strong>Typora 快捷键：</strong></p>
+<p>Ctrl+I：斜体</p>
+<p>Ctrl+B：粗体</p>
+<p>Ctrl+U：下划线</p>
+<p>Alt+Shift+5：删除线</p>
+<h4 id="（3）引用块"><a href="#（3）引用块" class="headerlink" title="（3）引用块"></a>（3）引用块</h4><p><strong>Markdown 语法：</strong></p>
+<pre><code class="hljs markdown"><span class="hljs-quote">&gt; 文字引用</span></code></pre>
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p><strong>Typora 快捷键：</strong> Ctrl+Shift+Q</p>
+<h4 id="（4）代码块"><a href="#（4）代码块" class="headerlink" title="（4）代码块"></a>（4）代码块</h4><p><strong>Markdown 语法：</strong></p>
+<pre><code class="hljs autohotkey">`行内代码`
 
+​</code></pre>
+<p>多行代码<br>多行代码<br>​```</p>
+<pre><code class="hljs clean">
+**Typora 快捷键：**
+
+行内代码：Ctrl+Shift+`
+
+多行代码：Ctrl+Shift+K
+
+#### （<span class="hljs-number">5</span>）公式块
+
+**Markdown 语法：**</code></pre>
+<p>$$<br>数学公式<br>$$</p>
+<pre><code class="hljs clean">
+**Typora 快捷键：** Ctrl+Shift+M
+
+#### （<span class="hljs-number">6</span>）分割线
+
+**Markdown 语法：**</code></pre>
+<p>方法一：—</p>
+<p>方法二：+++</p>
+<p>方法三：***</p>
+<pre><code class="hljs clean">
+#### （<span class="hljs-number">7</span>）列表
+
+**Markdown 语法：**</code></pre>
+<ol>
+<li>有序列表项</li>
+</ol>
+<ul>
+<li>无序列表项</li>
+</ul>
+<ul>
+<li>无序列表项</li>
+</ul>
+<ul>
+<li>无序列表项<pre><code class="hljs clean">
+**Typora 快捷键：**
+
+有序列表项：Ctrl+Shift+[
+
+无序列表项：Ctrl+Shift+]
+
+#### （<span class="hljs-number">8</span>）表格
+
+**Markdown 语法：**</code></pre>
+表头1|表头2</li>
+<li>|-|-<br>内容11|内容12<br>内容21|内容22<pre><code class="hljs clean">
+**Typora 快捷键：** Ctrl+T
+
+#### （<span class="hljs-number">9</span>）超链接
+
+**Markdown语法：**</code></pre>
+方法一：<a href="链接地址" title="链接描述">链接文字</a><br>例如：<a href="https://www.example.com/" target="_blank" rel="noopener" title="示例链接">示例链接</a></li>
+</ul>
+<p>方法二：&lt;链接地址&gt;<br>例如：<a href="https://www.example.com/" target="_blank" rel="noopener">https://www.example.com/</a></p>
+<pre><code class="hljs clean">
+**Typora快捷键：** Ctrl+K
+
+#### （<span class="hljs-number">10</span>）图片
+
+**Markdown语法：**</code></pre>
+<p><img src="%E5%9B%BE%E7%89%87%E5%9C%B0%E5%9D%80" srcset="/img/loading.gif" alt="图片文字" title="图片描述"><br>例如：<img src="https://www.example.com/example.PNG" srcset="/img/loading.gif" alt="示例图片" title="示例图片"></p>
+<pre><code class="hljs autohotkey">
+**Typora快捷键：** Ctrl+Shift+I
+
+**说明**：在 Hexo中 插入图片时，请按照以下的步骤进行设置
+
+<span class="hljs-number">1</span>. 将 **站点配置文件** 中的 `post_asset_folder` 选项的值设置为 <span class="hljs-literal">true</span>
+
+<span class="hljs-number">2</span>. 在站点文件夹中打开 git bash，输入命令 `npm install hexo-asset-image --save` 安装插件
+
+<span class="hljs-number">3</span>. 这样，当使用 `hexo <span class="hljs-keyword">new</span> title` 创建文章时，将同时在 `source/_post` 文件夹中生成一个与 title 同名的文件夹，我们只需将图片放进此文件夹中，然后在文章中通过 Markdown 语法进行引用即可
+
+   例如，在资源文件夹（就是那个与 title 同名的文件夹）中添加图片 example.PNG，则可以在对应的文章中使用语句 `![示例图片](title/example.PNG <span class="hljs-string">"示例图片"</span>)` 添加图片
+
+ **<span class="hljs-number">2</span>、高级设置** 
+
+#### （<span class="hljs-number">1</span>）模板设置
+
+当我们使用命令 `hexo <span class="hljs-keyword">new</span> <span class="hljs-string">"title"</span>` 创建文章时，Hexo 会根据 `/scaffolds/post.md` 对新文章进行初始化
+
+换言之，`/scaffolds/post.md` 就是新文章的 **模板**，所以我们可以修改它来适应自己的写作习惯
+
+一个简单的示例如下：</code></pre>
+<p>title: Test01<br>date: 1594702578000<br>tags:<br>categories: </p>
+<pre><code class="hljs clean">
+#### （<span class="hljs-number">2</span>）头部设置
+
+在每篇利用 Hexo 创建的文章的开头，都会有对文章进行说明的文字，叫做 **文章头部**
+
+文章的头部除了可以设置文章标题、发布日期等基础信息外，还可以为文章添加标签、分类等
+
+一个简单的示例如下：</code></pre>
+<p>title: Title<br>date: YYYY-MM-DD HH:MM:SS<br>tags: [tag1, tag2, …]<br>categories: category</p>
+<pre><code class="hljs xml">
+**注意**：属性和属性值之间必须有一个空格，否则会解析错误
+
+#### （3）首页显示
+
+在利用 Hexo 框架搭建的博客网站中，首页会显示文章的内容，且默认显示文章的全部内容
+
+如果当文章太长的时候就会显得十分冗余，所以我们有必要对其进行精简
+
+这时，我们只需在文章中使用 `<span class="hljs-comment">&lt;!--more--&gt;</span>` 标志即可，表示只会显示标志前面的内容
+
+## 三、部署发布
+
+在站点文件夹中打开 git bash，输入如下命令部署和发布文章</code></pre>
+<p>$ hexo g -d</p>
+<pre><code>
+**建议**：在使用 `hexo g` 部署之后，可以先使用 `hexo s` 运行本地站点，然后在浏览器输入地址 http://lacolhost:4000/ 查看运行结果，检查无误后再使用 `hexo d` 发布
+</code></pre>
             </article>
             <hr>
             <div>
               <div class="post-metas mb-3">
                 
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/markdown%E5%AD%A6%E4%B9%A0/">markdown学习</a>
+                    
+                  </div>
                 
               </div>
               
@@ -233,15 +379,15 @@
                   <div class="post-prev col-6">
                     
                     
-                      <a href="/2020/07/14/Test01/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Test01</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </div>
                   <div class="post-next col-6">
                     
+                    
+                      <a href="/2020/06/15/hello-world/">
+                        <span class="hidden-mobile">Hello World</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </div>
                 </div>
@@ -409,7 +555,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "Hello World&nbsp;",
+        "Test01&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
